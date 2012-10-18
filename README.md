@@ -2,8 +2,11 @@
 Exemplo de implementa&ccedil;&atilde;o de RPC.
 
 O comando
-	rpcgen -aCM oper.x
+
+    rpcgen -aCM oper.x
+
 gera os arquivos
+
 -Makefile.oper
 -oper_client.c;
 -oper_clnt.c;
@@ -16,3 +19,8 @@ com a opcao -a, rpcgen cria arquivos Makefile.oper, oper_client.c e oper_server.
 
 com a opcao -M, oper_server tem suporte a multithread.
 
+O comando
+
+    make -f Makefile.oper
+
+gera os c&oacute;digos objeto (.o) necess&aacute;rios e os execut&aacute;veis ./oper_server e ./oper_client	
