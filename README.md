@@ -23,4 +23,6 @@ O comando
 
     make -f Makefile.oper
 
-gera os c&oacute;digos objeto (.o) necess&aacute;rios e os execut&aacute;veis ./oper_server e ./oper_client	
+gera os c&oacute;digos objeto (.o) necess&aacute;rios e os execut&aacute;veis ./oper_server e ./oper_client
+
+Agora podemos executar ./oper_server e v&aacute;rias inst&acirc;ncias de ./oper_client.
