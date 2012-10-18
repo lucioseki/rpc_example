@@ -1,0 +1,5 @@
+*~
+*.o
+*.swp
+oper_client
+oper_server
