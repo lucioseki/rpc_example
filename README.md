@@ -7,13 +7,13 @@ O comando
 
 gera os arquivos
 
--Makefile.oper
--oper_client.c;
--oper_clnt.c;
--oper.h;
--oper_server.c;
--oper_svc.c;
--oper_xdr.c;
+- Makefile.oper
+- oper_client.c;
+- oper_clnt.c;
+- oper.h;
+- oper_server.c;
+- oper_svc.c;
+- oper_xdr.c;
 
 com a opcao -a, rpcgen cria arquivos Makefile.oper, oper_client.c e oper_server.c;
 
