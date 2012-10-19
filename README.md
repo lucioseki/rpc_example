@@ -15,9 +15,11 @@ gera os arquivos
 - oper_svc.c;
 - oper_xdr.c;
 
-com a opcao -a, rpcgen cria arquivos Makefile.oper, oper_client.c e oper_server.c;
+com a op&ccedil;&atilde;o -a, rpcgen cria arquivos Makefile.oper, oper_client.c e oper_server.c;
 
-com a opcao -M, oper_server tem suporte a multithread.
+com a op&ccedil;&atilde;o -M, as fun&ccedil;&otilde;s de oper_server tornam-se thread safe.
+
+A op&ccedil;&atilde;o -A faria o oper_server criar threads automaticamente conforme a demanda, no entanto esta op&ccedil;&atilde;o est&aacute; dispon&iacute;vel somente no SunRPC da Solaris. No rpcgen do Linux n&atilde;o h&aacute; esta op&ccedil;&atilde;o.
 
 O comando
 
@@ -25,4 +27,4 @@ O comando
 
 gera os c&oacute;digos objeto (.o) necess&aacute;rios e os execut&aacute;veis ./oper_server e ./oper_client
 
-Agora podemos executar ./oper_server e v&aacute;rias inst&acirc;ncias de ./oper_client.
+Agora podemos executar ./oper_server e v&aacute;rias inst&acirc;ncias de ./oper_client, o oper_server atender&aacute; a cada uma das chamadas de oper_client em sequ&ecirc;ncia.
