@@ -28,3 +28,6 @@ O comando
 gera os c&oacute;digos objeto (.o) necess&aacute;rios e os execut&aacute;veis ./oper_server e ./oper_client
 
 Agora podemos executar ./oper_server e v&aacute;rias inst&acirc;ncias de ./oper_client, o oper_server atender&aacute; a cada uma das chamadas de oper_client em sequ&ecirc;ncia.
+
+## Conclus&atilde;o
+No Linux n&atilde;o  &eacute; f&aacute;cil implementar servidor multithread como seria no Solaris.
