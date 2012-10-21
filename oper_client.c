@@ -17,28 +17,27 @@ int main (int argc, char *argv[]){
 		switch(op){
 			case '+':
 				soma_1(&in, &res, clnt);
+				printf("%d %c %d = %d\n", in.arg1, op, in.arg2, res);
 				break;
 			case '-':
 				dif_1(&in, &res, clnt);
+				printf("%d %c %d = %d\n", in.arg1, op, in.arg2, res);
 				break;
 			case '*':
 				prod_1(&in, &res, clnt);
+				printf("%d %c %d = %d\n", in.arg1, op, in.arg2, res);
 				break;
 			case '/':
 				if(in.arg2 == 0){
 					printf("Divisao por zero\n");
 				}else{
 					razao_1(&in, &res, clnt);
+					printf("%d %c %d = %d\n", in.arg1, op, in.arg2, res);
 				}
 				break;
 			default:
 				printf("operacao invalida");
-				exit(1);
 		} // end switch
-
-		if(op != '/' || in.arg2 != 0)
-			printf("%d %c %d = %d\n", in.arg1, op, in.arg2, res);
-
 	} // end while
 	
 	exit (0);

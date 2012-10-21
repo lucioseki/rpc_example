@@ -31,3 +31,4 @@ Agora podemos executar ./oper_server e v&aacute;rias inst&acirc;ncias de ./oper_
 
 ## Conclus&atilde;o
 No Linux n&atilde;o  &eacute; f&aacute;cil implementar servidor multithread como seria no Solaris.
+O programa server consegue estabelecer conex&otilde;es com diferentes clientes ao mesmo tempo, mas executa os procedimentos um ap&oacute;s o outro com a mesma thread, mas n&atilde;o em paralelo.
